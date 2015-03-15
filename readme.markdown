@@ -31,7 +31,7 @@ query.result # => [29]
 query.duration # => 0.035231213000000004
 ```
 
-See full [Algorithmia.com API docs by clicking here.](https://algorithmia.com/docs/api#curl).
+See full [Algorithmia.com API docs by clicking here](https://algorithmia.com/docs/api#curl).
 
 ### Who made this?
 [Bilawal Hameed](http://github.com/bih). Released freely under the [MIT License](http://bih.mit-license.org/).

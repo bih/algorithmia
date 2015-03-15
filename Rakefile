@@ -59,7 +59,7 @@ task :deploy do
   build_gem
 
   spec = Gem::Specification::load("algorithmia.gemspec")
-  sh "gem push ./algorithmia-#{spec.version}.gem"
+  sh "gem push algorithmia-#{spec.version}.gem"
 
   puts ("-" * 5) + " SUCCESS - Gem has been pushed live! " + ("-" * 5)
 end

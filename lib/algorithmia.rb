@@ -13,6 +13,6 @@ require 'algorithmia/http'
 
 class Algorithmia
 	def self.call(endpoint, input)
-		post_http("/api/#{endpoint}", input)
+		post_http("/#{endpoint}", input.to_json)
 	end
 end

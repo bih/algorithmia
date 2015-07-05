@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Bilawal Hameed"]
   spec.email         = 'bilawal@studenthack.com'
   spec.homepage      = 'http://github.com/bih/algorithmia'
-
+  
   spec.files         = `git ls-files`.split("\n").select{ |f| f[-4..-1] != ".gem" }
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   spec.require_paths = ["lib"]

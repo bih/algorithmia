@@ -7,12 +7,12 @@ class Algorithmia
 
   def self.post_http(endpoint, params = {})
     params = params.to_s unless params.is_a?(Hash)
-    parse_output post(endpoint, body: params, headers: { "Authorization" => @api_key, "Accept" => "application/json" })
+    parse_output post(endpoint, body: params, headers: { "Authorization" => @api_key, "Content-Type" => "application/json" })
   end
 
   def self.get_http(endpoint, params = {})
     params = params.to_s unless params.is_a?(Hash)
-    parse_output get(endpoint, query: params, headers: { "Authorization" => @api_key, "Accept" => "application/json" })
+    parse_output get(endpoint, query: params, headers: { "Authorization" => @api_key, "Content-Type" => "application/json" })
   end
 
   def self.parse_output(res)

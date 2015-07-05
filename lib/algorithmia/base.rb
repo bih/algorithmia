@@ -9,6 +9,6 @@ class Algorithmia
   include Singleton
   include HTTParty
 
-  base_uri "https://api.algorithmia.com"
+  base_uri "https://api.algorithmia.com/v1/algo"
   format :json
 end
